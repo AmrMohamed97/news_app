@@ -36,11 +36,6 @@ class CustomFormField extends StatelessWidget {
         labelText: isUpperCase ? label!.toUpperCase() : label,
         hintText: hintText,
         border: const OutlineInputBorder(),
-        focusedBorder: const OutlineInputBorder(
-          borderSide: BorderSide(
-            color: Colors.white,
-          ),
-        ),
         prefixIcon: Icon(
           prefix,
           color: Colors.black,
