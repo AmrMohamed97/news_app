@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:news_app/core/utiles/cache_helper/cache_helper.dart';
 import 'package:news_app/core/utiles/dio_helper/dio_helper.dart';
-import 'package:news_app/features/business/presentation/pages/business_screen.dart';
-import 'package:news_app/features/news_layout/presentation/manager/news_states.dart';
-import 'package:news_app/features/science/presentation/pages/science_screen.dart';
-import 'package:news_app/features/sports/presentation/pages/sports_screen.dart';
+import 'package:news_app/features/business/pages/business_screen.dart';
+import 'package:news_app/features/manager/news_states.dart';
+ import 'package:news_app/features/science/pages/science_screen.dart';
+import 'package:news_app/features/sports/pages/sports_screen.dart';
 
 class NewsCubit extends Cubit<NewsStates> {
   NewsCubit():super(NewsInitialStates());

@@ -13,6 +13,7 @@ class CustomFormField extends StatelessWidget {
     this.validator,
     this.label,
     required this.controller,
+    required this.hintText,
   });
   final IconData? prefix;
   final IconData? suffix;
@@ -27,22 +28,27 @@ class CustomFormField extends StatelessWidget {
   final bool isUpperCase = false;
   final bool enabled = true;
   final TextEditingController controller;
+  final String hintText;
   @override
   Widget build(BuildContext context) {
     return TextFormField(
       decoration: InputDecoration(
         labelText: isUpperCase ? label!.toUpperCase() : label,
+        hintText: hintText,
         border: const OutlineInputBorder(),
-        prefix: SizedBox(
-          height: 15.0,
-          child: Icon(prefix),
-        ),
-        suffix: SizedBox(
-          height: 15.0,
-          child: IconButton(
-            onPressed: suffixPressed,
-            icon: Icon(suffix),
+        focusedBorder: const OutlineInputBorder(
+          borderSide: BorderSide(
+            color: Colors.white,
           ),
+        ),
+        prefixIcon: Icon(
+          prefix,
+          color: Colors.black,
+        ),
+        suffixIcon: IconButton(
+          onPressed: suffixPressed,
+          icon: Icon(suffix),
+          padding: EdgeInsets.zero,
         ),
       ),
       enabled: enabled,
