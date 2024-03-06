@@ -3,8 +3,8 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:news_app/core/utiles/functions/functions.dart';
 import 'package:news_app/core/utiles/widgets/custom_form_field.dart';
 import 'package:news_app/core/utiles/widgets/news_builder.dart';
-import 'package:news_app/features/manager/news_cubit.dart';
-import 'package:news_app/features/manager/news_states.dart';
+import 'package:news_app/features/news_layout/presentation/manager/news_cubit.dart';
+import 'package:news_app/features/news_layout/presentation/manager/news_states.dart';
 
 class SearchScreen extends StatelessWidget {
   SearchScreen({super.key});

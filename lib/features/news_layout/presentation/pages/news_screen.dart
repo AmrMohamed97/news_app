@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:news_app/core/utiles/functions/functions.dart';
-import 'package:news_app/features/manager/news_cubit.dart';
+ import 'package:news_app/features/news_layout/presentation/manager/news_cubit.dart';
   import 'widgets/search_screen.dart';
 
 class NewsScreen extends StatelessWidget {
