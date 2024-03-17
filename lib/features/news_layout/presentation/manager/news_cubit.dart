@@ -54,7 +54,7 @@ class NewsCubit extends Cubit<NewsStates> {
   await DioHelper.getData(
   url: 'v2/top-headlines',
   parameter: {
-  'country':'eg',
+  'country':'us',
   'category':'business',
   'apikey':'daa010b93cb64fcfbde6b10b6161c62f',
   },).then((value) {
@@ -76,7 +76,7 @@ class NewsCubit extends Cubit<NewsStates> {
     await DioHelper.getData(
         url: 'v2/top-headlines',
         parameter: {
-          'country':'eg',
+          'country':'us',
           'category':'sports',
           'apikey':'daa010b93cb64fcfbde6b10b6161c62f',
         },
@@ -99,7 +99,7 @@ class NewsCubit extends Cubit<NewsStates> {
     await DioHelper.getData(
         url: 'v2/top-headlines',
         parameter: {
-          'country':'eg',
+          'country':'us',
           'category':'science',
           'apikey':'daa010b93cb64fcfbde6b10b6161c62f',
         },
@@ -122,7 +122,7 @@ class NewsCubit extends Cubit<NewsStates> {
     await DioHelper.getData(
       url: 'v2/top-headlines',
       parameter:{
-        'country':'eg',
+        'country':'us',
         'category':'settings',
         'apikey':'daa010b93cb64fcfbde6b10b6161c62f',
 
